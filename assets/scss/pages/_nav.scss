@@ -1,0 +1,91 @@
+@import '../abstracts/variables';
+@import '../mixins/common_mix';
+@import '../mixins/responsive';
+
+#nav_id{
+    border: $border;
+    height: 78px;
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .store_logo{
+
+        .y{
+            @include w-sans(#F9C000,16px,700,90%);            
+        }
+        .g{
+            @include w-sans(#1C9A44,16px,700,90%);
+        }
+    }
+
+    .quick_menu{
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 24px;
+        @include custom_responsive(0px, 767.9px){
+            display: none;
+        }
+        &> a{
+            @include w-sans4-b(16px);
+        }
+        .drop_down {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4px;
+            
+
+            i{
+              line-height: 40px;
+            }
+            }
+        
+    }
+
+    .icons{
+        display: flex;
+        gap: 16px;
+
+        &> li,a,i{
+        font-size: 20px;
+        }
+
+        @include custom_responsive(0px, 575.9px){
+            display: none;
+        }
+    }
+    #drop_down_menu{
+        display: none;
+
+        .menu_button{
+            background-color: #1C9A44;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: #F9C000;
+        }
+        @include custom_responsive(0px, 767.9px){
+            display: block;
+            &:hover .drop_content{
+                display: block;
+                
+            }
+        }
+        .drop_content{
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1; 
+            
+            &> ul,li{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

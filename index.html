@@ -3,19 +3,245 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FONT-AWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <!-- GOOGE-FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/slide_show.css">
     <title>Home_page</title>
 </head>
 <body>
-    <div class="temp">
-        <h1 class="temp_heading">
-            Fi_Amanillah
-        </h1>
-        <h3 class="temp_subheading">
-            In the custody of Allah.
-        </h3>
-        <p>HTML Boiler Plate with full set up (scss, sass, postcss etc.) editable to begin a project.</p>
+    <div class="container">
+        <nav id="nav_id">
 
+            <div class="store_logo">
+                <h5 class="y">Garden</h5>
+                <h5 class="g">Nursery</h5>   
+            </div>
+
+            <!-- Hidden  -->
+            <div id="drop_down_menu">
+                <a class="menu_button" href="#">Menu</a>
+                <div class="drop_content">
+                    <ul>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Offers</a></li>
+                        <li><a href="#">Combo Zone</a></li>
+                        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    </ul>
+                    
+                </div>
+            </div>
+
+            <!-- visible  -->
+
+            <ul class="quick_menu">
+
+                <li>
+                    <a href="#">
+                      <div class="drop_down">
+                        <p>Shop</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </div>
+                    </a>
+                </li>
+                  
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Combo Zone</a></li>
+                
+            </ul>
+            <ul class="icons">
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="#"><i class="fa-regular fa-user"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>   
+        </nav>
+
+        <div id="banner">
+            <!-- Slideshow container -->
+            <div class="slide_show">
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="./assets/images/banner/banner_bg7.jpg" style="width:100%">
+                        <div class="text-overlay">
+                            <h2>Gardening, elevated.</h2>
+                            <p>Enhancing your gardening experience.</p>
+                            <button>View Products</button>
+                          </div>
+                        
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="./assets/images/banner/banner_bg6.jpg" style="width:100%">
+                    <div class="text-overlay">
+                        <h2>Gardening, elevated.</h2>
+                        <p>Enhancing your gardening experience.</p>
+                        <button>View Products</button>
+                      </div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="./assets/images/banner/banner_bg_5.jpg" style="width:100%">
+                    <div class="text-overlay">
+                        <h2>Gardening, elevated.</h2>
+                        <p>Enhancing your gardening experience.</p>
+                        <button>View Products</button>
+                      </div>
+                    </div>
+                
+                </div>
+                <br>
+                
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+                
+                
+            <h4 class="branding_text">We make products that help you
+                upgrade your gardening experience.</h4>
+        </div>
+
+        <div id="gallery">
+            <div class="gallery_div">
+                <div class="single_gallery_item active">
+                    <div class="image">
+                        <a href="#"><img src="./assets/images/gallery/gallery_item1.png" alt="nursery-plant"></a>
+                    </div>
+                    <div class="info">
+                        <div class="tag_name">
+                            <h5>home decor</h5>
+                            <h4>content girl</h4>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                        
+                    </div>
+                </div>
+                <div class="single_gallery_item">
+                    <div class="image">
+                        <a href="#"><img src="./assets/images/gallery/gallery_item1.png" alt="nursery-plant"></a>
+                    </div>
+                    <div class="info">
+                        <div class="tag_name">
+                            <h5>home decor</h5>
+                            <h4>content girl</h4>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                        
+                    </div>
+                </div>
+                <div class="single_gallery_item">
+                    <div class="image">
+                        <a href="#"><img src="./assets/images/gallery/gallery_item1.png" alt="nursery-plant"></a>
+                    </div>
+                    <div class="info">
+                        <div class="tag_name">
+                            <h5>home decor</h5>
+                            <h4>content girl</h4>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                        
+                    </div>
+                </div>
+                <div class="single_gallery_item">
+                    <div class="image">
+                        <a href="#"><img src="./assets/images/gallery/gallery_item1.png" alt="nursery-plant"></a>
+                    </div>
+                    <div class="info">
+                        <div class="tag_name">
+                            <h5>home decor</h5>
+                            <h4>content girl</h4>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                        
+                    </div>
+                </div>
+                <div class="single_gallery_item">
+                    <div class="image">
+                        <a href="#"><img src="./assets/images/gallery/gallery_item1.png" alt="nursery-plant"></a>
+                    </div>
+                    <div class="info">
+                        <div class="tag_name">
+                            <h5>home decor</h5>
+                            <h4>content girl</h4>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                        
+                    </div>
+                </div>
+                <div class="single_gallery_item">
+                    <div class="image">
+                        <a href="#"><img src="./assets/images/gallery/gallery_item1.png" alt="nursery-plant"></a>
+                    </div>
+                    <div class="info">
+                        <div class="tag_name">
+                            <h5>home decor</h5>
+                            <h4>content girl</h4>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                        
+                    </div>
+                </div>
+                <div class="single_gallery_item">
+                    <div class="image">
+                        <a href="#"><img src="./assets/images/gallery/gallery_item1.png" alt="nursery-plant"></a>
+                    </div>
+                    <div class="info">
+                        <div class="tag_name">
+                            <h5>home decor</h5>
+                            <h4>content girl</h4>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                        
+                    </div>
+                </div>
+                <div class="single_gallery_item">
+                    <div class="image">
+                        <a href="#"><img src="./assets/images/gallery/gallery_item1.png" alt="nursery-plant"></a>
+                    </div>
+                    <div class="info">
+                        <div class="tag_name">
+                            <h5>home decor</h5>
+                            <h4>content girl</h4>
+                        </div>
+                        <a href="#"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                        
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+
+        <div id="promo">
+            <div class="promo_div">
+                <div class="text_box">
+                    <div class="txt">
+                        <h4>Big Green Days are back!</h4>
+                        <p>Our annual-sale festival is back, 
+                            and its better than ever!</p>
+                    </div>
+                    <div class="button">
+                        <p>Shop Now</p>
+                        <a href="#"><i class="fa-solid fa-circle-chevron-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+        <script src="./assets/js/_banner_slide.js"></script>
 </body>
 </html>

@@ -1,0 +1,86 @@
+@import '../abstracts/variables';
+@import '../mixins/common_mix';
+@import '../mixins/responsive';
+
+@mixin font($cl,$fm,$sz,$stl,$wt,$lh: 30px,$ls: 0.5px){
+
+    color: $cl;
+    font-family: $fm;
+    font-size: $sz;
+    font-style: $stl;
+    font-weight: $wt;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+@mixin w-sans($cl,$sz,$wt,$lh: normal,$ls: normal){
+
+    color: $cl;
+    font-family: Work sans;
+    font-size: $sz;
+    font-style: normal;
+    font-weight: $wt;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+@mixin w-sans1-b($sz,$lh: normal,$ls: normal){
+
+    color: $black;
+    font-family: Work Sans;
+    font-size: $sz;
+    font-style: normal;
+    font-weight: 100;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+@mixin w-sans4-b($sz,$lh: normal,$ls: normal){
+
+    color: $black;
+    font-family: Work Sans;
+    font-size: $sz;
+    font-style: normal;
+    font-weight: 400;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+@mixin w-sans7-b($sz,$lh: normal,$ls: normal){
+
+    color: $black;
+    font-family: Work Sans;
+    font-size: $sz;
+    font-style: normal;
+    font-weight: 700;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+@mixin w-sans1-w($sz,$lh: normal,$ls: normal){
+
+    color: $white;
+    font-family: Work Sans;
+    font-size: $sz;
+    font-style: normal;
+    font-weight: 100;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+@mixin w-sans4-w($sz,$lh: normal,$ls: normal){
+
+    color: $white;
+    font-family: Work Sans;
+    font-size: $sz;
+    font-style: normal;
+    font-weight: 400;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+@mixin w-sans7-w($sz,$lh: normal,$ls: normal){
+
+    color: $white;
+    font-family: Work Sans;
+    font-size: $sz;
+    font-style: normal;
+    font-weight: 700;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+

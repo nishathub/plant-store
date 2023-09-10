@@ -1,0 +1,66 @@
+@import '../abstracts/variables';
+@import '../mixins/common_mix';
+@import '../mixins/responsive';
+
+#gallery{
+    margin-bottom: 60px;
+    .gallery_div{
+        display: flex;
+        flex-wrap: wrap;
+        gap:32px;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+
+        .single_gallery_item{
+            width: 320px;
+            background-color: $gray;
+
+            &.active{
+                background-color: $green;  
+                .info{
+                    .tag_name{
+                        h4, h5{
+                            color: $white;
+                        }
+                    }
+                }
+            }
+            
+            .image{
+                a{
+                    img{
+                        max-width: 100%;
+                    }
+                }
+            }
+
+            .info{
+                
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 24px;
+                .tag_name{
+
+                    h5{
+                        @include w-sans($dark_gray,14px,700);
+                        text-transform: uppercase;
+                        margin-bottom: 8px;
+
+                    }
+                    h4{
+                        @include w-sans7-b(24px,24px,-0.96px);
+                        text-transform: capitalize;
+                    }
+                }
+                a{
+                    i{
+                        color: $yellow;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -3,12 +3,13 @@
 
 
 .container{
-    width: 1110px;
+    width: 1440px;
     height: auto;
     margin: auto;
-    // @include border(black);
+    padding: 0px 30px;
+    @include border(black);
 
-    @include custom_responsive(320px, 1399.9px){
-        width: 85vw;
+    @include custom_responsive(0px, 1399.9px){
+        width: 95vw;
     }
 }

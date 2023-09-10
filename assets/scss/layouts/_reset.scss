@@ -16,7 +16,7 @@ p{
     padding: 0;
     margin: 0;
     @include tr();
-    font-family: $poppins;
+    font-family: work sans;
 }
 ul,ol{
     list-style-type: none;
@@ -28,5 +28,6 @@ a{
 a, span, i {
     display: inline-block;
     @include tr();
-    font-family: $poppins;
+    font-family: work sans;
+    color: $black;
 }

@@ -1,0 +1,88 @@
+@import '../abstracts/variables';
+@import '../mixins/common_mix';
+@import '../mixins/responsive';
+
+#promo{
+    border: $border;
+    background-image: url('../../../assets/images/promo/promo_bg.png');
+    background-size: cover;
+    height: 286px ;
+    width: auto;
+
+    .promo_div{
+        background-color: rgba(28, 154, 68, .65) ;
+        // mix-blend-mode:multiply;
+        color: $white;
+        width: 688px;
+        height: 100%;
+        position: relative;
+
+        @include custom_responsive(0px, 767.9px){
+            width: 90%;
+        }
+
+        .text_box{
+            position: absolute;
+            left: 80px;
+            top: 65px;
+            border: $border;
+            width: 365px;
+            height: 162px;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 36px;
+            
+            @include custom_responsive(0px, 767.9px){
+                width: auto;
+                left: 10px;
+                gap: 10px;
+            }
+
+            .txt{
+                
+                h4{
+                    @include w-sans7-w(32px,normal,-1.2px);
+                    margin-bottom: 8px;
+
+                    @include custom_responsive(0px,767.9px){
+                        font-size: 20px;
+                    }
+                    @include custom_responsive(768px, 991.9px){
+                        font-size: 28px;
+                    }
+                    
+                }
+                p{
+                    @include w-sans4-w(24px,normal,-0.96px);
+
+                    @include custom_responsive(0px,767.9px){
+                        font-size: 18px;
+                    }
+                    @include custom_responsive(768px, 991.9px){
+                        font-size: 22px;
+                    }
+                }
+            }
+
+            .button{
+                display: flex;
+                align-items: flex-start;
+                gap: 10px;
+
+                p{
+                    @include w-sans7-w(16px,normal,-0.32px);
+
+                }
+                a{
+                    i{
+                        color: $white;
+                        font-size: 16px;
+                    }
+                }
+
+            }
+        }
+
+    }
+}
