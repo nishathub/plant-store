@@ -1,0 +1,56 @@
+@import '../abstracts/variables';
+@import '../mixins/common_mix';
+@import '../mixins/responsive';
+
+#features{
+    margin-bottom: 60px;
+    height: 224px;
+    background-image: url('../images/features/service_bg.png');
+    background-size:cover;
+    
+
+    .feature_div{
+        height: 100%;
+        width: auto;
+        background-color: rgba(62, 55, 55, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .feature_list{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 90px;
+            align-items: center;
+            justify-content: center; 
+            
+            @include custom_responsive(0px, 767.9px){
+                gap: 20px;
+                justify-content: start;
+                padding-left: 20px;
+            }
+
+            .single_feature{
+                display: flex;
+                gap: 24px;
+                align-items: center;
+
+                i{
+                    color: $yellow;
+                    font-size: 24px;
+
+                    @include custom_responsive(0px, 767.9px){
+                        font-size: 18px;
+                    }
+                }
+                h5{
+                    @include w-sans7-w(24px,normal,-0.96px);
+
+                    @include custom_responsive(0px, 767.9px){
+                        font-size: 20px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}

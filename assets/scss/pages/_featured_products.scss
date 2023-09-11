@@ -4,6 +4,7 @@
 
 #featured_collection{
     // border: $border;
+    margin-bottom: 60px;
     overflow: hidden;
     .heading_div{
         display: flex;
@@ -14,6 +15,11 @@
 
         h4{
             @include w-sans7-b(32px,24px,-1.28px);
+            
+            @include custom_responsive(0px,767.9px){
+                font-size:20px;
+                line-height: 30px;
+            }
         }
         a{
             i{
@@ -87,6 +93,7 @@
     
                         @include custom_responsive(0px,767.9px){
                             font-size: 20px;
+                            font-weight: 400;
                         }
                         @include custom_responsive(768px, 991.9px){
                             font-size: 28px;

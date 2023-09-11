@@ -13,6 +13,11 @@
         padding-right: 25px;
         h4{
             @include w-sans7-b(32px,24px,-1.28px);
+            
+            @include custom_responsive(0px,767.9px){
+                font-size:20px;
+                line-height: 30px;
+            }
         }
         .view_button{
             display: flex;
@@ -21,6 +26,10 @@
             p{
                 @include w-sans($dark_gray,16px,700,normal,-0.32px);
 
+                @include custom_responsive(0px,767.9px){
+                    font-size:15px;
+                    line-height: 24px;
+                }
             }
             a{
                 i{
@@ -64,10 +73,18 @@
                         text-transform: uppercase;
                         margin-bottom: 8px;
 
+                        @include custom_responsive(0px, 767.9px){
+                            font-size: 12px;
+                        }
+
                     }
                     h4{
                         @include w-sans7-b(24px,24px,-0.96px);
                         text-transform: capitalize;
+
+                        @include custom_responsive(0px, 767.9px){
+                            font-size: 18px;
+                        }
                     }
                 }
                 a{
