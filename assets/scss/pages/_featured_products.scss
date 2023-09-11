@@ -1,0 +1,128 @@
+@import '../abstracts/variables';
+@import '../mixins/common_mix';
+@import '../mixins/responsive';
+
+#featured_collection{
+    // border: $border;
+    overflow: hidden;
+    .heading_div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        padding-right: 25px;
+
+        h4{
+            @include w-sans7-b(32px,24px,-1.28px);
+        }
+        a{
+            i{
+                color: $black;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .product_list{
+        width: 1564px;
+        height: auto;
+        display: flex;
+        gap: 30px;
+
+        @include custom_responsive(0px,1199.9px){
+            flex-wrap: wrap;
+            width: auto;
+            justify-content: center;
+            
+        }
+        
+        .single_prod{
+            // border: $border;
+            position: relative;
+            width: 500px;
+            height: 416px;
+            background-size:cover;
+
+            @include custom_responsive(0px,1199.9px){
+                width: 350px;
+            }
+
+            &.prod-1{
+            background-image: url('../images/banner/banner_bg1.png');
+            }
+            &.prod-2{
+            background-image: url('../images/banner/banner_bg2.png');
+            }
+            &.prod-3{
+            background-image: url('../images/banner/banner_bg5.jpg');
+            }
+
+            .text_box{
+                // border: $border;
+                background-color: rgba(28, 154, 68, .65) ;
+                // mix-blend-mode: multiply;
+                position: absolute;
+                right: 0px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 300px;
+                height: 182px;
+                padding: 50px 40px;
+                display: inline-flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 26px;
+                
+                @include custom_responsive(0px, 767.9px){
+                    width: auto;
+                    left: 10px;
+                    gap: 10px;
+                }
+    
+                .txt{
+                    
+                    h4{
+                        @include w-sans7-w(32px,normal,-1.2px);
+                        margin-bottom: 8px;
+    
+                        @include custom_responsive(0px,767.9px){
+                            font-size: 20px;
+                        }
+                        @include custom_responsive(768px, 991.9px){
+                            font-size: 28px;
+                        }
+                        
+                    }
+                    p{
+                        @include w-sans4-w(24px,normal,-0.96px);
+    
+                        @include custom_responsive(0px,767.9px){
+                            font-size: 18px;
+                        }
+                        @include custom_responsive(768px, 991.9px){
+                            font-size: 22px;
+                        }
+                    }
+                }
+    
+                .button{
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 10px;
+    
+                    p{
+                        @include w-sans7-w(16px,normal,-0.32px);
+    
+                    }
+                    a{
+                        i{
+                            color: $white;
+                            font-size: 16px;
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+}

@@ -3,11 +3,12 @@
 @import '../mixins/responsive';
 
 #promo{
-    border: $border;
-    background-image: url('../images/promo/promo-bg.PNG');
+    // border: $border;
+    background-image: url('../images/promo/promo_bg.png');
     background-size: cover;
     height: 286px ;
     width: auto;
+    margin-bottom: 60px;
 
     .promo_div{
         background-color: rgba(28, 154, 68, .65) ;
@@ -22,10 +23,10 @@
         }
 
         .text_box{
+            // border: $border;
             position: absolute;
             left: 80px;
             top: 65px;
-            border: $border;
             width: 365px;
             height: 162px;
             display: inline-flex;
