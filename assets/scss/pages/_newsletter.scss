@@ -1,0 +1,139 @@
+@import '../abstracts/variables';
+@import '../mixins/common_mix';
+@import '../mixins/responsive';
+
+#newsletter{
+    // border: $border;
+    margin-bottom: 30px;
+    height: 200px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .letter_div{
+        // border: $border;
+        padding: 0px 80px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        align-items: center;
+        justify-content: space-between;
+
+        @include custom_responsive(0px, 1350px){
+            padding: 0;
+        }
+        @include custom_responsive(0px, 991.9px){
+            grid-template-columns: 1fr;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+
+        .letter_info{
+            // border: $border;
+            display: flex;
+            align-items: center;
+            gap: 48px;
+
+            @include custom_responsive(0px, 991.9px){
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+            }
+
+            i{
+                color: $black;
+                font-size: 40px;
+
+                @include custom_responsive(0px,575.9px){
+                    font-size: 30px;
+                }
+            }
+
+            .letter_txt{
+                width: 388px;
+
+                @include custom_responsive(0px, 991.9px){
+                    width: 100%;
+                }
+
+               
+                h5{
+                    @include w-sans7-b(32px,normal, -1.28px);
+                    margin-bottom: 8px;
+
+                    @include custom_responsive(576px, 991.9px){
+                        font-size: 25px;
+                    }
+                    @include custom_responsive(0px, 575.9px){
+                        font-size: 20px;
+                    }
+                }
+
+                p{
+                    @include w-sans4-b(24px,normal, -0.96px);
+
+                    @include custom_responsive(576px, 991.9px){
+                        font-size: 20px;
+                    }
+                    @include custom_responsive(0px, 575.9px){
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .letter_form{
+
+            form{
+                display: flex;
+
+                @include custom_responsive(0px, 991.9px){
+                    justify-content: center;
+                }
+                input{
+                    background-color: $gray;
+                    height: 48px;
+                    width: 420px;
+                    
+
+                    @include custom_responsive(0px, 1200px){
+                        width: 100%;
+                    }
+
+                    &::placeholder{
+                        @include w-sans($dark_gray,24px,400,normal,-0.48px);
+                        padding: 16px 10px;
+
+                        @include custom_responsive(576px, 991.9px){
+                            font-size: 20px;
+                        }
+                        @include custom_responsive(0px, 575.9px){
+                            font-size: 16px;
+                            padding: 0;
+                        }
+
+                    }
+                }
+
+                button{
+                    background-color: $dark_green;
+                    @include w-sans7-w(16px,normal, -0.32px);
+                    width: 160px;
+                    height: 48px;
+                    padding: 14px 22px;
+
+                    
+                    @include custom_responsive(0px, 991.9px){
+                        font-weight: 400;
+                        padding: 7px 11px;
+                        width: 120px ;
+                    }
+                    
+                }
+            }
+
+        }
+    }
+}

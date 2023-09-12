@@ -1,0 +1,166 @@
+@import '../abstracts/variables';
+@import '../mixins/common_mix';
+@import '../mixins/responsive';
+
+#footer_id{
+
+    .footer_div{
+        
+
+        .menu{
+            // border: $border;
+        background-color: $dark_green;
+        height: 337px;
+        padding: 80px 40px 72px 40px;
+        display: grid;
+        grid-template-columns: 420px 1fr;
+        justify-content: left;
+        gap: 141px;
+
+        @include custom_responsive(1050px,1399.9px){
+            padding: 80px 10px 72px 10px;
+            gap: 4vw;
+        }
+        @include custom_responsive(0px, 1049.9px){
+            padding: 40px 10px 42px 10px;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            justify-content: center;
+            height: auto;
+        }
+            .message{
+
+                h5{
+                    margin-bottom: 21px;
+                    @include w-sans7-w(14px);
+                    text-transform: uppercase;
+                }
+                p{
+                    @include w-sans4-w(16px,24px,-0.64px);
+                    
+                    span{
+                        @include w-sans($yellow,16px,700,24px,-0.64px);
+                    }
+                }
+            }
+
+            .menu_box_list{
+                // border: $border;
+                display: grid;
+                grid-template-columns: 95px 75px 210px;
+                gap: 141px;
+                justify-content: right;
+
+                @include custom_responsive(1050px,1399.9px){
+                    gap: 4vw;
+                }
+                @include custom_responsive(576px, 1049.9px){
+                    justify-content: center;
+                    gap: 4vw;
+                }
+                @include custom_responsive(0px, 575.9px){
+                    grid-template-columns: 1fr;
+                    justify-content: left;
+                    gap: 30px;
+                }
+
+
+                .menu_details{
+                    // border: $border;
+                    width: auto;
+                    max-width: fit-content;
+
+                   
+                    h5{
+                        margin-bottom: 21px;
+                        @include w-sans7-w(14px);
+                        text-transform: uppercase;
+                    }
+                    p{
+                        @include w-sans4-w(16px,24px,-0.64px);
+                        
+                        span{
+                            @include w-sans($yellow,16px,700,24px,-0.64px);
+                        }
+                    }
+                    ul{
+                        
+                        display: flex;
+                        flex-direction: column;
+                        a{
+                            // border: $border;
+                            // max-width: 100%;
+    
+                            li{
+    
+                                @include w-sans4-w(16px,32px,-0.64px);
+                                text-transform: capitalize;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom_div{
+            height: 100px;
+            background-color: $gray;
+            display: flex;
+            align-items: center;
+
+            @include custom_responsive(0px,576px){
+                height: auto;
+            }
+
+            .bottom_box{
+                // border: $border;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0px 80px; 
+
+
+
+                @include custom_responsive(576px, 768px){
+                    
+                    padding: 10px 10px;               
+                }
+                @include custom_responsive(0px,576px){
+                    flex-direction: column;
+                    padding: 10px 10px;
+                    gap: 30px;
+                    align-items: center;
+                    justify-content: center;
+                    
+                }
+                .copyright{
+
+                    p{
+                        @include w-sans4-b(14px,20px);
+                    }
+                    h6{
+                        @include w-sans7-b(14px,20px);
+                    }
+                }
+
+                .icon{
+                    display: flex;
+                    align-items: center;
+                    gap: 24px;
+                    .color_back{
+                        height: 14px;
+                        width: 44px;
+                        background-color: $green;
+                    }
+                    .image{
+
+                        img{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
