@@ -46,7 +46,7 @@
   margin-bottom: 20px;
 }
 
-.mySlides .text-overlay button{
+.mySlides .text-overlay a{
   background-color: transparent;
   color: white;
   border: 2px solid white;
