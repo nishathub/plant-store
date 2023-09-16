@@ -13,6 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="stylesheet" href="./assets/styles/slide_show.css">
+    <link rel="stylesheet" href="./assets/styles/auto_slide.css">
     <title>Home_page</title>
 </head>
 <body>
@@ -67,7 +68,7 @@
 
         <section id="banner">
             <!-- Slideshow container -->
-            <div class="slide_show">
+            <div  class="slide_show">
                 <div class="slideshow-container">
 
                     <!-- Full-width images with number and caption text -->
@@ -88,7 +89,7 @@
                     <div class="text-overlay">
                         <h2>Gardening, elevated.</h2>
                         <p>Enhancing your gardening experience.</p>
-                        <button>View Products</button>
+                        <a href="#">View Products</a>
                       </div>
                     </div>
                 
@@ -98,7 +99,7 @@
                     <div class="text-overlay">
                         <h2>Gardening, elevated.</h2>
                         <p>Enhancing your gardening experience.</p>
-                        <button>View Products</button>
+                        <a href="#">View Products</a>
                       </div>
                     </div>
                 
@@ -112,6 +113,27 @@
                     <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
             </div>
+
+            <div style="display: none;"  class="slider-frame">
+                <div class="slide-images">
+                        <div class="img-container">
+                            <img src="./assets/images/banner/banner_bg7.jpg">
+                        </div>
+                        <div class="img-container">
+                            <img src="./assets/images/banner/banner_bg6.jpg">
+                        </div>
+                        <div class="img-container">
+                            <img src="./assets/images/banner/banner_bg5.jpg">
+                        </div>
+                </div>
+
+                <div class="text-overlay">
+                    <h2>Gardening, elevated.</h2>
+                    <p>Enhancing your gardening experience.</p>
+                    <a href="#">View Products</a>
+                  </div>
+            </div>
+
                 
                 
             <h4 class="branding_text">We make products that help you
